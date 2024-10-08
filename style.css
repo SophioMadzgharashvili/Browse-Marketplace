@@ -139,16 +139,36 @@
 
 
 .input1 {
-    background-image: url("MagnifyingGlass.png");
-    background-position: right;
+    background: url("MagnifyingGlass.png");
     background-repeat: no-repeat;
     background-size: auto;
+    background-position: right;
     background-position-x: 1070px;
 }
 
+
+.input:end {
+    right: 50px;
+}
 
 .input1::placeholder {
     font-family: "workSans";
     color: rgba(133, 133, 132, 1);
     font-weight: 400;
+}
+
+
+@media screen and (max-width: 992px) {
+    .input1 {
+        background-position-x: 890px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .input1 {
+        background-position-x: 470px;
+    }
+
 }
